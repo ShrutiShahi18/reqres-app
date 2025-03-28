@@ -1,12 +1,109 @@
-# React + Vite
+📘 Reqres User Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based user management application that interacts with the Reqres API to perform user authentication, display a paginated user list, and allow editing and deleting users.
 
-Currently, two official plugins are available:
+📋 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✅ User Authentication (Login)✅ Paginated User List (Fetch from Reqres API)✅ Edit and Delete User Functionality✅ Glassmorphism UI with Tailwind CSS✅ React Router Navigation✅ API Error Handling and User Feedback
 
-## Expanding the ESLint configuration
+🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Frontend: React (with Vite for fast builds)
+
+Routing: React Router
+
+HTTP Client: Axios
+
+Styling: Tailwind CSS (with Glassmorphism Design)
+
+📂 Project Structure
+
+reqres-app/
+├── public/
+├── src/
+│   ├── components/
+│   │    ├── LoginForm.jsx
+│   │    ├── UserList.jsx
+│   │    ├── UserCard.jsx
+│   │    └── EditUserForm.jsx
+│   ├── pages/
+│   │    ├── LoginPage.jsx
+│   │    ├── UserListPage.jsx
+│   │    └── EditUserPage.jsx
+│   ├── App.jsx
+│   ├── api.js
+│   ├── routes.jsx
+│   └── main.jsx
+└── package.json
+
+🚀 Getting Started
+
+1. Clone the repository
+
+git clone https://github.com/yourusername/reqres-app.git
+cd reqres-app
+
+2. Install dependencies
+
+npm install
+
+3. Run the development server
+
+npm run dev
+
+The app should be running on http://localhost:5173
+
+🔐 Authentication
+
+Use the following credentials to log in:
+
+Email: eve.holt@reqres.in
+
+Password: cityslicka
+
+📊 API Endpoints
+
+Login: POST https://reqres.in/api/login
+
+Get Users: GET https://reqres.in/api/users?page=1
+
+Update User: PUT https://reqres.in/api/users/{id}
+
+Delete User: DELETE https://reqres.in/api/users/{id}
+
+📖 Usage
+
+Login Page: Enter credentials to access the user list.
+
+User List Page: View, edit, and delete users. Supports pagination.
+
+Edit User Page: Modify user details (first name, last name, and email).
+
+📦 Build for Production
+
+npm run build
+
+📤 Deployment
+
+You can deploy the built application to any static hosting provider (e.g., Vercel, Netlify).
+
+Build the project:
+
+npm run build
+
+Deploy the contents of the dist/ folder.
+
+🐞 Troubleshooting
+
+Ensure all dependencies are installed: npm install
+
+Check for errors in the browser console (Ctrl + Shift + J)
+
+Restart the development server: Ctrl + C, then npm run dev
+
+📃 License
+
+This project is licensed under the MIT License.
+
+💙 Made with ❤️ using React and Tailwind CSS.
+
